@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #000000;
+    color: #605f5f;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+form {
+    background-color: rgb(39, 38, 38);
+    border: none;
+    padding: 30px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out; 
+}
+
+form:hover {
+    transform: translateY(-5px); 
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #fffdfd;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #e80000; 
+    outline: none; 
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #e20d0d;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #d71c1c; 
+    transform: translateY(-2px); 
+}
+
+
+h1 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fafbfc;
+    transition: color 0.3s ease, font-weight 0.2s ease;
+}
+
+ul li a:hover {
+    color: #bf230b;
+    font-weight: bold;
+}
+
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label[for="fisico"],
+label[for="magnetico"] {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+
+
+form:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
